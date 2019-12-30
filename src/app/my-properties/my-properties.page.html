@@ -1,0 +1,31 @@
+<ion-header >
+  <ion-toolbar >
+    <ion-title>My Properties</ion-title>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-round-back"></ion-icon>  
+    </ion-buttons >
+    
+  </ion-toolbar>
+  <ion-searchbar showCancelButton="never"></ion-searchbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor ="let item of [1,1,1,1]; let i=index">
+  <ion-img src ="/assets/flat.jpg"></ion-img>
+    <ion-card-content>
+      <ion-card-title>Flat </ion-card-title>
+      <ion-icon name="pin"></ion-icon> Lazimpat
+      <ionic4-star-rating #ratinng0
+        class="Profileratting"
+        style="display:flex; justify-content: Right; "
+        activeIcon="ios-star"
+        defaultIcon ="ios-star-outline"
+        readonly ="true"
+        rating="3"
+        fontSize ="20px"
+        (ratingChanged) ="logRatingChange($event)">
+      </ionic4-star-rating>
+       
+    </ion-card-content>
+  </ion-card>
+</ion-content>
