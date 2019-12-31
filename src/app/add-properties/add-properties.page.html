@@ -1,4 +1,4 @@
-<!-- <ion-header >
+<ion-header >
   <ion-toolbar >
     <ion-title>Add Properties</ion-title>
     <ion-buttons slot="start">
@@ -9,75 +9,92 @@
 </ion-header>
 
 <ion-content>
+  <div class="new">
+    <ion-item>
+      <ion-label>Name :</ion-label>
+      <ion-input> </ion-input>
+    </ion-item>
 
-</ion-content> -->
+    <ion-item>
+      <ion-label>Address :</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
 
-<ion-header>
 
-  <ion-toolbar>
-    <ion-buttons slot="secondary">
-      <ion-button [routerLink]="['/login']" >
-        <ion-icon slot="start" name="arrow-back"></ion-icon>
-        Sign In
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-  <ion-toolbar>
-    <ion-title>Sign Up</ion-title>
-  </ion-toolbar>
-  
-</ion-header>
-
-<ion-content>
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>Type:</ion-label>
+        </ion-list-header>
     
-  <div class="center">
-    <ion-item>
-      <ion-label position="stacked">Full Name</ion-label>
-      <ion-input ></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label position="stacked">E-mail</ion-label>
-      <ion-input ></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label position="stacked">Phone Number</ion-label>
-      <ion-input ></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label position="stacked">City</ion-label>
-      <ion-input ></ion-input>  
-    </ion-item>
-  
-    <ion-item>
-      <ion-label position="stacked">Date of Birth</ion-label>
-      <ion-datetime displayFormat="DD MMMM YYYY" value="1970-01-01T00:00:00.000"></ion-datetime>
-    </ion-item>
-
-
-    <ion-item>
-      <ion-label position="stacked">I am a:</ion-label>
-      <ion-list>
-      <ion-radio-group>    
         <ion-item>
-          <ion-label>Landlord</ion-label>
-          <ion-radio slot="start" value="landlord" checked></ion-radio>
+          <ion-label>Home</ion-label>
+          <ion-radio slot="start" value="home" checked></ion-radio>
         </ion-item>
     
         <ion-item>
-          <ion-label>Tenant</ion-label>
-          <ion-radio slot="start" value="tenant"></ion-radio>
+          <ion-label>Room</ion-label>
+          <ion-radio slot="start" value="room"></ion-radio>
+        </ion-item>
+         
+        <ion-item>
+          <ion-label>Apartment</ion-label>
+          <ion-radio slot="start" value="apartment"></ion-radio>
         </ion-item>
       </ion-radio-group>
     </ion-list>
+    Details :
+    <ion-item>
+      <ion-label position="floating">No. of BedRooms</ion-label>
+      <ion-input></ion-input>
+
     </ion-item>
+    <ion-item>
+    <ion-label position="floating">No.of Bathrooms</ion-label>
+      <ion-input> </ion-input>
 
+    </ion-item>
+    <ion-item>
+    <ion-label position="floating">Kitchen Type</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+   
     
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>Car Parking</ion-label>
+        </ion-list-header>
+        
+      <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio slot="start" value="yes"></ion-radio>
+      </ion-item>
+         
+      <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio slot="start" value="no"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+    </ion-list>
 
-      <ion-button expand="block">Sign In as a new user</ion-button>
-
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>Water Supply</ion-label>
+        </ion-list-header>
+        
+      <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio slot="start" value="yes"></ion-radio>
+      </ion-item>
+         
+      <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio slot="start" value="no"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+    </ion-list>
   </div>
+  
 </ion-content>
-
