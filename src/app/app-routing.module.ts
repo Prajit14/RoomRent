@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'my-properties',
     loadChildren: () => import('./my-properties/my-properties.module').then( m => m.MyPropertiesPageModule)
   },
+  {
+    path: 'add-properties',
+    loadChildren: () => import('./add-properties/add-properties.module').then( m => m.AddPropertiesPageModule)
+  },
 ];
 
 @NgModule({
