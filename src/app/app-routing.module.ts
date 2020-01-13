@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'my-properties', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   {
     path: 'my-properties',
@@ -11,7 +11,11 @@ const routes: Routes = [
   {
     path: 'add-properties',
     loadChildren: () => import('./add-properties/add-properties.module').then( m => m.AddPropertiesPageModule)
+  },  {
+    path: 'reviews',
+    loadChildren: () => import('./reviews/reviews.module').then( m => m.ReviewsPageModule)
   },
+
 ];
 
 @NgModule({

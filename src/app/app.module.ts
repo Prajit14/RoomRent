@@ -38,3 +38,4 @@ import { FileTransfer } from '@ionic-native/file-transfer/ngx';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+ 
