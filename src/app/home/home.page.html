@@ -1,14 +1,140 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+<ion-header >
+  <ion-toolbar >
+    <ion-title>Add Properties</ion-title>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-round-back"></ion-icon>  
+    </ion-buttons >
+    
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <div class="new">
+    <ion-item>
+      <ion-label>Name :</ion-label>
+      <ion-input> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Address :</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>Type:</ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Home</ion-label>
+          <ion-radio slot="start" value="home" checked></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Room</ion-label>
+          <ion-radio slot="start" value="room"></ion-radio>
+        </ion-item>
+         
+        <ion-item>
+          <ion-label>Apartment</ion-label>
+          <ion-radio slot="start" value="apartment"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    Details :
+    <ion-item>
+      <ion-label position="floating">No. of BedRooms</ion-label>
+      <ion-input></ion-input>
+
+    </ion-item>
+    <ion-item>
+    <ion-label position="floating">No.of Bathrooms</ion-label>
+      <ion-input> </ion-input>
+
+    </ion-item>
+    <ion-item>
+    <ion-label position="floating">Kitchen Type</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+   
+    
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>Car Parking</ion-label>
+        </ion-list-header>
+        
+      <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio slot="start" value="yes"  checked></ion-radio>
+      </ion-item>
+         
+      <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio slot="start" value="no"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>Water Supply</ion-label>
+        </ion-list-header>
+        
+      <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio slot="start" value="yes" checked></ion-radio>
+      </ion-item>
+         
+      <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio slot="start" value="no"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+    </ion-list>
   </div>
+
+  Upload Picture :
+
+  <ion-card>
+    <img *ngIf="!fileUrl" src="assets/no-image.jpeg"/>
+    <img *ngIf="fileUrl" src="{{fileUrl}}"/>
+    <ion-card-content>
+      <ion-button color="medium" size="large" (click)="cropUpload()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card> 
+
+  <ion-card>
+    <img *ngIf="!fileUrl" src="assets/no-image.jpeg"/>
+    <img *ngIf="fileUrl" src="{{fileUrl}}"/>
+    <ion-card-content>
+      <ion-button color="medium" size="large" (click)="cropUpload()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img *ngIf="!fileUrl" src="assets/no-image.jpeg"/>
+    <img *ngIf="fileUrl" src="{{fileUrl}}"/>
+    <ion-card-content>
+      <ion-button color="medium" size="large" (click)="cropUpload()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img *ngIf="!fileUrl" src="assets/no-image.jpeg"/>
+    <img *ngIf="fileUrl" src="{{fileUrl}}"/>
+    <ion-card-content>
+      <ion-button color="medium" size="large" (click)="cropUpload()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

@@ -68,7 +68,7 @@
         
       <ion-item>
           <ion-label>Yes</ion-label>
-          <ion-radio slot="start" value="yes"></ion-radio>
+          <ion-radio slot="start" value="yes"  checked></ion-radio>
       </ion-item>
          
       <ion-item>
@@ -86,7 +86,7 @@
         
       <ion-item>
           <ion-label>Yes</ion-label>
-          <ion-radio slot="start" value="yes"></ion-radio>
+          <ion-radio slot="start" value="yes" checked></ion-radio>
       </ion-item>
          
       <ion-item>
@@ -98,6 +98,43 @@
   </div>
 
   Upload Picture :
-  
+
+  <ion-card>
+    <img *ngIf="!fileUrl" src="assets/no-image.jpeg"/>
+    <img *ngIf="fileUrl" src="{{fileUrl}}"/>
+    <ion-card-content>
+      <ion-button color="medium" size="large" (click)="cropUpload()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card> 
+
+  <ion-card>
+    <img *ngIf="!fileUrl" src="assets/no-image.jpeg"/>
+    <img *ngIf="fileUrl" src="{{fileUrl}}"/>
+    <ion-card-content>
+      <ion-button color="medium" size="large" (click)="cropUpload()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img *ngIf="!fileUrl" src="assets/no-image.jpeg"/>
+    <img *ngIf="fileUrl" src="{{fileUrl}}"/>
+    <ion-card-content>
+      <ion-button color="medium" size="large" (click)="cropUpload()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img *ngIf="!fileUrl" src="assets/no-image.jpeg"/>
+    <img *ngIf="fileUrl" src="{{fileUrl}}"/>
+    <ion-card-content>
+      <ion-button color="medium" size="large" (click)="cropUpload()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
