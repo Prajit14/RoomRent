@@ -31,7 +31,7 @@
     "cordova-android": "^8.1.0",
     "cordova-plugin-crop": "^0.4.0",
     "core-js": "^2.5.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ionic-native": "^2.9.0",
     "ionic4-star-rating": "^1.1.1",
     "rxjs": "~6.5.1",
